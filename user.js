@@ -10,7 +10,13 @@ let userSchema= mongoose.Schema({
     },
     passWord:{
         type:String
-    }
+    },
+        role: {
+        type: String,
+        enum: ["user", "admin", "instructor"],
+        default: "user"
+    },
+
 })
 
 
