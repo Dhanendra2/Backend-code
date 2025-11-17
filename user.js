@@ -16,6 +16,9 @@ let userSchema= mongoose.Schema({
         enum: ["user", "admin", "instructor"],
         default: "user"
     },
+    resetToken:String,
+    resetTokenExpiry:Date
+
 
 })
 
